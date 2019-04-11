@@ -1,0 +1,348 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Roboto", sans-serif;
+}
+
+/*-----------------------------
+         Color Palette
+-----------------------------*/
+$dark: #181818;
+$light: #f8f8f8;
+$dark-blue: #056384;
+$light-blue: #08aae3;
+$contrast: #ee6c4d;
+
+/*-----------------------------
+         Default Values
+-----------------------------*/
+
+$radius: 20px;
+$small-radius: 5px;
+
+$small-padding: 0.5em;
+$default-padding: 1.2em;
+$big-padding: 2em;
+
+/*-----------------------------
+         Buttons
+-----------------------------*/
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  padding: 1.2em;
+  transition: all 0.2ms ease-in-out;
+  display: inline-block;
+}
+
+.default-btn {
+  border: 1px solid $light-blue;
+  border-radius: $radius;
+  background-color: $light-blue;
+  color: $light;
+
+  &:hover,
+  &:active {
+    background: none;
+    border: 1px solid $light-blue;
+    color: $light-blue;
+  }
+}
+
+.inverse-btn {
+  border: 1px solid $light-blue;
+  border-radius: $radius;
+  background-color: $light;
+  color: $light-blue;
+
+  &:hover,
+  &:active {
+    background-color: $light-blue;
+    border: 1px solid $light-blue;
+    color: $light;
+  }
+}
+
+.link-btn {
+  color: $dark;
+  border-bottom: 2px solid transparent;
+
+  &:hover,
+  &:active {
+    color: lighten($color: $dark, $amount: 15%);
+    border-bottom: 2px solid $contrast;
+  }
+}
+
+.clean-btn {
+  color: $dark;
+
+  &:hover {
+    color: lighten($color: $dark, $amount: 40%);
+  }
+}
+
+.inverseclean-btn {
+  color: $light;
+
+  &:hover {
+    color: darken($color: $light, $amount: 15%);
+  }
+}
+
+.transparent-btn {
+  border: 1px solid $light-blue;
+  border-radius: $radius;
+  color: $light-blue;
+
+  &:hover {
+    background: $light-blue;
+    border: 1px solid $light-blue;
+    color: $light;
+  }
+}
+
+/*-----------------------------
+         Navigation
+-----------------------------*/
+.container {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+
+  .header {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
+    background-color: $light;
+    padding: 1em;
+    min-height: 6em;
+
+    border-bottom: 1px solid darken($color: $light, $amount: 5%);
+
+    .nav-link {
+      display: block;
+      padding: 1em;
+    }
+
+    .nav-logo {
+      flex: 1;
+      display: block;
+    }
+  }
+}
+
+/*-----------------------------
+         Footer
+-----------------------------*/
+
+.footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  min-height: 10em;
+  color: $light;
+
+  .info-box {
+    flex: 1;
+    display: flex;
+    background-color: $contrast;
+    padding: 2em;
+    justify-content: flex-start;
+
+    .contact-info {
+      flex: 1;
+      display: block;
+    }
+
+    .social-info {
+      flex: 1;
+      display: block;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        padding: 1.2em;
+      }
+    }
+  }
+
+  .contact-box {
+    display: block;
+    margin: auto;
+    padding: 2em;
+    height: 100%;
+    background: darken($color: $contrast, $amount: 7%);
+  }
+}
+
+/*-----------------------------
+         Hero Banner
+-----------------------------*/
+.hero-banner {
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1530539967144-47f24f9832e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2053&q=80");
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+  h1 {
+    padding-bottom: 1em;
+  }
+
+  .hero-buttons {
+    display: block;
+    padding-top: 2em;
+  }
+}
+
+/*-----------------------------
+         Forms
+-----------------------------*/
+
+input {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  width: 100%;
+  max-height: 50px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: $small-radius;
+  padding: 1em;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $contrast;
+    border-radius: $small-radius;
+    box-shadow: 0px 4px 4px rgba($contrast, 0.2);
+  }
+
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+select {
+  text-decoration: none;
+  outline: none;
+  width: 100%;
+  max-height: 50px;
+  font-size: 1em;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba($dark, 0.2);
+  border-radius: $small-radius;
+  padding: 1em;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+
+  &:active,
+  &:hover,
+  &:focus {
+    border: 1px solid $contrast;
+    border-radius: $small-radius;
+    box-shadow: 0px 4px 4px rgba($contrast, 0.2);
+  }
+
+  option {
+    appearance: none;
+    outline: none;
+    font-size: 1em;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 4px rgba($dark, 0.2);
+    padding: 1em;
+
+    &:hover,
+    &:active,
+    &:selected {
+      background-color: $light;
+    }
+  }
+}
+
+.textArea {
+  border: none;
+  text-decoration: none;
+  outline: none;
+  width: 100%;
+  height: 215px;
+  font-size: 1em;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 4px rgba($dark, 0.25);
+  border-radius: 5px;
+  padding: 1em;
+  box-sizing: border-box;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $contrast;
+    box-shadow: 0px 4px 4px rgba($contrast, 0.2);
+
+    border-radius: 5px;
+  }
+
+  &:focus {
+    &::placeholder {
+      color: transparent;
+    }
+  }
+}
+
+/*-----------------------------
+            Calendar
+-----------------------------*/
+
+.event-full {
+  background-color: $light;
+  border: 1px solid darken($light, 10%);
+  border-radius: $small-radius;
+  box-shadow: 2px 4px 10px rgba($dark, 0.2);
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow: hidden;
+  max-height: 200px;
+
+  .event-cover {
+    img {
+      height: 100%;
+    }
+  }
+
+  .event-description {
+    flex: 1;
+    padding-left: $default-padding;
+  }
+}
