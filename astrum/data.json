@@ -1,183 +1,188 @@
 {
-    "project_logo": null,
-    "project_favicon": "favicon.png",
-    "project_name": null,
-    "project_url": null,
-    "copyright_start_year": null,
-    "client_name": null,
-    "client_url": null,
-    "creators": [
+  "project_logo": null,
+  "project_favicon": "favicon.png",
+  "project_name": null,
+  "project_url": null,
+  "copyright_start_year": null,
+  "client_name": null,
+  "client_url": null,
+  "creators": [
+    {
+      "name": null,
+      "url": null
+    }
+  ],
+  "theme": {
+    "border_color": "#E0E6ED",
+    "highlight_color": "#F9FAFC",
+    "brand_color": "#00585C",
+    "background_color": "#FFFFFF",
+    "code_highlight_theme": "github",
+    "override_code_highlight_bg": "#F9FAFC",
+    "sample_dark_background": "#333333",
+    "show_project_name": true,
+    "show_version": true,
+    "max_width": null,
+    "titles": {
+      "library_title": "Pattern Library",
+      "pages_title": "Overview",
+      "components_title": "Components"
+    }
+  },
+  "assets": {
+    "css": ["style/main.css"],
+    "js": [],
+    "images": "imgs/"
+  },
+  "font_libraries": {
+    "typekit_code": null,
+    "typography_web_fonts": "./fonts/Roboto/Roboto-Regular.ttf",
+    "google_web_fonts": null
+  },
+  "content": {
+    "show_first_page_on_load": true,
+    "title": "Overview",
+    "pages": [
+      {
+        "name": "introduction",
+        "title": "Introduction",
+        "file": "./pages/intro.md"
+      }
+    ]
+  },
+  "groups": [
+    {
+      "name": "branding",
+      "title": "Branding",
+      "components": [
         {
-            "name": null,
-            "url": null
+          "group": "branding",
+          "name": "color-palette",
+          "title": "Color-Palette",
+          "type": "colors",
+          "colors": ["#181818", "#f8f8f8", "#056384", "#08aae3", "#ee6c4d"]
         }
-    ],
-    "theme": {
-        "border_color": "#E0E6ED",
-        "highlight_color": "#F9FAFC",
-        "brand_color": "#00585C",
-        "background_color": "#FFFFFF",
-        "code_highlight_theme": "github",
-        "override_code_highlight_bg": "#F9FAFC",
-        "sample_dark_background": "#333333",
-        "show_project_name": true,
-        "show_version": true,
-        "max_width": null,
-        "titles": {
-            "library_title": "Pattern Library",
-            "pages_title": "Overview",
-            "components_title": "Components"
+      ]
+    },
+    {
+      "name": "navigation",
+      "title": "Navigation",
+      "components": [
+        {
+          "group": "navigation",
+          "name": "header",
+          "title": "Header"
+        },
+        {
+          "group": "navigation",
+          "name": "footer",
+          "title": "Footer"
         }
+      ]
     },
-    "assets": {
-        "css": [
-            "style/main.css"
-        ],
-        "js": []
-    },
-    "font_libraries": {
-        "typekit_code": null,
-        "typography_web_fonts": "./fonts/Roboto/Roboto-Regular.ttf",
-        "google_web_fonts": null
-    },
-    "content": {
-        "show_first_page_on_load": true,
-        "title": "Overview",
-        "pages": [
-            {
-                "name": "introduction",
-                "title": "Introduction",
-                "file": "./pages/intro.md"
-            }
-        ]
-    },
-    "groups": [
+    {
+      "name": "buttons",
+      "title": "Buttons",
+      "components": [
         {
-            "name": "branding",
-            "title": "Branding",
-            "components": [
-                {
-                    "group": "branding",
-                    "name": "color-palette",
-                    "title": "Color-Palette",
-                    "type": "colors",
-                    "colors": [
-                        "#181818",
-                        "#f8f8f8",
-                        "#056384",
-                        "#08aae3",
-                        "#ee6c4d"
-                    ]
-                }
-            ]
+          "group": "buttons",
+          "name": "default",
+          "title": "Button Default",
+          "width": "half"
         },
         {
-            "name": "navigation",
-            "title": "Navigation",
-            "components": [
-                {
-                    "group": "navigation",
-                    "name": "header",
-                    "title": "Header"
-                },
-                {
-                    "group": "navigation",
-                    "name": "footer",
-                    "title": "Footer"
-                }
-            ]
+          "group": "buttons",
+          "name": "inverse",
+          "title": "Inverse Button",
+          "width": "half"
         },
         {
-            "name": "buttons",
-            "title": "Buttons",
-            "components": [
-                {
-                    "group": "buttons",
-                    "name": "default",
-                    "title": "Button Default",
-                    "width": "half"
-                },
-                {
-                    "group": "buttons",
-                    "name": "inverse",
-                    "title": "Inverse Button",
-                    "width": "half"
-                },
-                {
-                    "group": "buttons",
-                    "name": "link",
-                    "title": "Link Button",
-                    "width": "half"
-                },
-                {
-                    "group": "buttons",
-                    "name": "clean",
-                    "title": "Clean Button",
-                    "width": "half"
-                },
-                {
-                    "group": "buttons",
-                    "name": "inverse_clean",
-                    "title": "Inverse Clean",
-                    "width": "half",
-                    "options": {
-                        "sample_dark_background": true
-                    }
-                },
-                {
-                    "group": "buttons",
-                    "name": "transparent",
-                    "title": "Transparent Button",
-                    "width": "half"
-                }
-            ]
+          "group": "buttons",
+          "name": "link",
+          "title": "Link Button",
+          "width": "half"
         },
         {
-            "name": "banners",
-            "title": "Banners",
-            "components": [
-                {
-                    "group": "banners",
-                    "name": "hero",
-                    "title": "Hero Banner"
-                }
-            ]
+          "group": "buttons",
+          "name": "clean",
+          "title": "Clean Button",
+          "width": "half"
         },
         {
-            "name": "forms",
-            "title": "Forms",
-            "components": [
-                {
-                    "group": "forms",
-                    "name": "input",
-                    "title": "Text Input",
-                    "width": "half"
-                },
-                {
-                    "group": "forms",
-                    "name": "select",
-                    "title": "Select List",
-                    "width": "half"
-                },
-                {
-                    "group": "forms",
-                    "name": "textarea",
-                    "title": "Text Area",
-                    "width": "half"
-                }
-            ]
+          "group": "buttons",
+          "name": "inverse_clean",
+          "title": "Inverse Clean",
+          "width": "half",
+          "options": {
+            "sample_dark_background": true
+          }
         },
         {
-            "name": "calendar",
-            "title": "Calendar",
-            "components": [
-                {
-                    "group": "calendar",
-                    "name": "event-full",
-                    "title": "Event Full Size"
-                }
-            ]
+          "group": "buttons",
+          "name": "transparent",
+          "title": "Transparent Button",
+          "width": "half"
         }
-    ],
-    "version": "1.9.5"
+      ]
+    },
+    {
+      "name": "banners",
+      "title": "Banners",
+      "components": [
+        {
+          "group": "banners",
+          "name": "hero",
+          "title": "Hero Banner"
+        }
+      ]
+    },
+    {
+      "name": "forms",
+      "title": "Forms",
+      "components": [
+        {
+          "group": "forms",
+          "name": "input",
+          "title": "Text Input",
+          "width": "half"
+        },
+        {
+          "group": "forms",
+          "name": "select",
+          "title": "Select List",
+          "width": "half"
+        },
+        {
+          "group": "forms",
+          "name": "textarea",
+          "title": "Text Area",
+          "width": "half"
+        }
+      ]
+    },
+    {
+      "name": "calendar",
+      "title": "Calendar",
+      "components": [
+        {
+          "group": "calendar",
+          "name": "event-full",
+          "title": "Event Full Size"
+        }
+      ]
+    },
+    {
+      "name": "links",
+      "title": "Links",
+      "components": [
+        {
+          "group": "links",
+          "name": "blue",
+          "title": "Blue",
+          "width": "half"
+        }
+      ]
+    }
+  ],
+  "version": "1.9.5"
 }
