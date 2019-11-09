@@ -225,8 +225,8 @@ a {
 .hero-banner {
   height: 100vh;
   background-image: linear-gradient(
-      rgba(0, 217, 212, 0.85),
-      rgba(0, 228, 161, 0.85)
+      rgba(0, 217, 212, 0.9),
+      rgba(0, 228, 161, 0.9)
     ),
     url("https://dcjb9ra2bn4fr.cloudfront.net/1600px_COLOURBOX18284365.jpg?Expires=1573390887&Signature=ZzTr63H9kpv-i7suHKQBIkPsBWQPnaBVkdC8a~RUb~M9uuvn44t1XvR2iW-9CQHa0bikFDRxl6BzDfZJ2uV3MZ5mVLEaqTC-k4YltXv87yZPZl1sumokCKS4GNoeQ-MsCtclc6oKiCSlVEtAMD8eSsj9p6x1LQWhQ5SoVvF-0iTINhFlw2RqajD25xGGJyQm0I-1iXV3RQNOmzEvDZiCF5TRswuAia8k7xPI8TbhDWP09wIfYwHdiUUvFlH9jtGCmxBp128YG5151z6f2o0OkvfK~-eCSjNkul4OQ0V4h6S8kGmY5mixn65e4PGx0e8NIdRqtoOoPUEfARV9cLmXJw__&Key-Pair-Id=APKAJJFR7WIPMIVXFK3Q");
 
@@ -240,7 +240,7 @@ a {
   width: 110%;
   align-content: center;
   margin-top: -50px;
-  margin-left: -60px;
+  margin-left: -100px;
 }
 
 .link-arrow {
@@ -249,7 +249,7 @@ a {
 }
 
 .down-arrow {
-  width: 50px;
+  width: 3%;
   position: absolute;
   bottom: 0px;
   margin-bottom: 5%;
@@ -257,9 +257,9 @@ a {
 
 .hero-text {
   position: absolute;
-  max-width: 500px;
+  max-width: 450px;
   color: white;
-  left: 15%;
+  left: 10%;
   top: 45%;
 
   p {
@@ -268,7 +268,8 @@ a {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 2.5em;
+    letter-spacing: 5px;
   }
 
   .frontpage-line {
