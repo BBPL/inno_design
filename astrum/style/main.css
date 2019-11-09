@@ -389,6 +389,46 @@ select option:hover, select option:active, select option:selected {
 }
 
 /*-----------------------------
+         Sponsor
+----------------------------- */
+.sponsors {
+  height: 50vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("https://images.unsplash.com/photo-1530539967144-47f24f9832e2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2053&q=80");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 192, 184, 0.75)), color-stop(51.56%, rgba(0, 217, 208, 0.75)), to(rgba(0, 227, 161, 0.75)));
+  background: linear-gradient(180deg, rgba(0, 192, 184, 0.75) 0%, rgba(0, 217, 208, 0.75) 51.56%, rgba(0, 227, 161, 0.75) 100%);
+}
+
+.sponsors .sponsor-combined {
+  margin: 60px;
+}
+
+.sponsors .sponsor-header {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 150%;
+  /* identical to box height, or 72px */
+  letter-spacing: 0.125em;
+  color: #FFFFFF;
+}
+
+.sponsors .sponsortext {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 150%;
+  /* or 36px */
+  letter-spacing: 0.125em;
+  color: #FFFFFF;
+}
+
+/*-----------------------------
             Calendar
 -----------------------------*/
 .event-container {

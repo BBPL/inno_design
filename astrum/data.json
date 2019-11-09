@@ -182,6 +182,17 @@
           "width": "half"
         }
       ]
+    },{
+      "name": "sponsors",
+      "title": "Sponsors",
+      "components":[
+        {
+          "group": "sponsors",
+          "name": "sponsor",
+          "title": "Sponsor",
+          "width": "full"
+        }
+      ]
     }
   ],
   "version": "1.9.5"
