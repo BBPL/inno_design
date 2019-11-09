@@ -63,13 +63,13 @@ a {
 }
 
 .link-btn {
-  color: #181818;
+  color: #f8f8f8;
   border-bottom: 2px solid transparent;
 }
 
 .link-btn:hover, .link-btn:active {
-  color: #3e3e3e;
-  border-bottom: 2px solid #ee6c4d;
+  color: #c2c2c2;
+  border-bottom: 2px solid #f8f8f8;
 }
 
 .clean-btn {
@@ -126,11 +126,9 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background-color: #f8f8f8;
   padding: 1em;
   min-height: 6em;
   max-height: 6em;
-  border-bottom: 1px solid #ebebeb;
 }
 
 .container .header .nav-link {
@@ -148,7 +146,7 @@ a {
 }
 
 .container .header .nav-logo .logo-svg {
-  width: 300px;
+  width: 15%;
 }
 
 /*-----------------------------

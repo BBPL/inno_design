@@ -80,13 +80,13 @@ a {
 }
 
 .link-btn {
-    color: $dark;
+    color: $light;
     border-bottom: 2px solid transparent;
 
     &:hover,
     &:active {
-        color: lighten($color: $dark, $amount: 15%);
-        border-bottom: 2px solid $contrast;
+        color: darken($color: #e8e8e8, $amount: 15%);
+        border-bottom: 2px solid $light;
     }
 }
 
@@ -133,12 +133,9 @@ a {
         justify-content: space-between;
         align-items: center;
         flex-flow: row wrap;
-        background-color: $light;
         padding: 1em;
         min-height: 6em;
         max-height: 6em;
-
-        border-bottom: 1px solid darken($color: $light, $amount: 5%);
 
         .nav-link {
             display: block;
@@ -152,7 +149,7 @@ a {
             display: block;
 
             .logo-svg {
-                width: 300px;
+                width: 15%
             }
         }
     }
