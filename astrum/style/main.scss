@@ -236,13 +236,45 @@ a {
   position: relative;
 }
 
+.logo-white-large {
+  width: 110%;
+  align-content: center;
+  margin-top: -50px;
+  margin-left: -60px;
+}
+
+.link-arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.down-arrow {
+  width: 50px;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 5%;
+}
+
 .hero-text {
   position: absolute;
   max-width: 500px;
   color: white;
+  left: 15%;
+  top: 45%;
+
+  p {
+    line-height: 1.5;
+    font-size: 1.2em;
+  }
 
   h1 {
-    font-size: 2em;
+    font-size: 3em;
+  }
+
+  .frontpage-line {
+    border-bottom: 2px solid #ffffff;
+    margin: 2% 0 2% 0;
+    width: 70%;
   }
 
   .hero-buttons {
