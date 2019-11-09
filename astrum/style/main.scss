@@ -163,15 +163,35 @@ a {
 -----------------------------*/
 
 .footer {
-    display: block;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+
     min-height: 10em;
     height: 10em;
     color: $light;
-    background-color: $contrast;
+    background: #23282D;
     width: 100%;
     box-sizing: border-box;
     overflow: hidden;
     transition: all 0.2s;
+
+    .flex-container {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+      }
+      
+      .flex-item {
+        flex: 1;
+        // width: 100px;  /* Or whatever */
+        // height: 100px; /* Or whatever */
+        // margin: auto;  /* Magic! */
+      }
 
     @include breakpoint(sm) {
         height: auto;
@@ -184,45 +204,6 @@ a {
 
         @include breakpoint(sm) {
             width: 100%;
-        }
-
-        .contact-info,
-        .social-info {
-            width: 50%;
-            float: left;
-            position: relative;
-            line-height: 2em;
-        }
-    }
-
-    .contact-box {
-        width: 30%;
-        float: left;
-        text-align: center;
-        vertical-align: middle;
-        line-height: 9em;
-        height: 100%;
-        background-color: darken($color: $contrast, $amount: 7%);
-
-        &:hover {
-            background-color: darken($color: $contrast, $amount: 3%);
-            cursor: pointer;
-
-            a {
-                color: $light;
-            }
-        }
-
-        @include breakpoint(sm) {
-            width: 100%;
-            height: 5em;
-            line-height: 5em;
-            text-align: center;
-            vertical-align: middle;
-
-            a {
-                padding: 0;
-            }
         }
     }
 }
