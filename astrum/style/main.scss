@@ -79,15 +79,15 @@ a {
 }
 
 .link-btn {
-  color: $dark;
-  border-bottom: 2px solid transparent;
+    color: $light;
+    border-bottom: 2px solid transparent;
 
-  &:hover,
-  &:active {
-    color: lighten($color: $dark, $amount: 15%);
-    border-bottom: 2px solid $contrast;
-  }
-}
+    &:hover,
+    &:active {
+        color: darken($color: #e8e8e8, $amount: 15%);
+        border-bottom: 2px solid $light;
+    }
+
 
 .clean-btn {
   color: $dark;
@@ -150,9 +150,32 @@ a {
       flex: 1;
       display: block;
 
-      .logo-svg {
-        width: 300px;
-      }
+    .header {
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+        padding: 1em;
+        min-height: 6em;
+        max-height: 6em;
+
+        .nav-link {
+            display: block;
+            padding: 1em;
+            padding-bottom: 2em;
+        }
+
+        .nav-logo {
+            margin-left: 3em;
+            flex: 1;
+            display: block;
+
+            .logo-svg {
+                width: 15%
+            }
+        }
+
     }
   }
 }

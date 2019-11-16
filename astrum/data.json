@@ -71,7 +71,10 @@
         {
           "group": "navigation",
           "name": "header",
-          "title": "Header"
+          "title": "Header",
+          "options": {
+            "sample_dark_background": true
+          }
         },
         {
           "group": "navigation",
