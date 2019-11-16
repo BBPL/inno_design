@@ -71,7 +71,10 @@
         {
           "group": "navigation",
           "name": "header",
-          "title": "Header"
+          "title": "Header",
+          "options": {
+            "sample_dark_background": true
+          }
         },
         {
           "group": "navigation",
@@ -191,6 +194,14 @@
           "group": "members",
           "name": "member",
           "title": "Member",
+    },{
+      "name": "sponsors",
+      "title": "Sponsors",
+      "components":[
+        {
+          "group": "sponsors",
+          "name": "sponsor",
+          "title": "Sponsor",
           "width": "full"
         }
       ]
