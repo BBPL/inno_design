@@ -185,6 +185,15 @@
           "width": "half"
         }
       ]
+    },
+    {
+      "name": "members",
+      "title": "Members",
+      "components": [
+        {
+          "group": "members",
+          "name": "member",
+          "title": "Member",
     },{
       "name": "sponsors",
       "title": "Sponsors",
